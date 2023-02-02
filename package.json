@@ -1,0 +1,22 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scarlatcristian/WeatherApp.git"
+  },
+  "author": "cristi scarlat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scarlatcristian/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/scarlatcristian/WeatherApp#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
