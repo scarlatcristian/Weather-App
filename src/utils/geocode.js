@@ -1,7 +1,11 @@
 const request = require("request");
+const dotenv = require("dotenv");
+const path = require("path");
 
-// copy from config.env
-const secretToken = "";
+// Define dotenv path to config.env
+const envPath = path.join(__dirname, "../../config.env");
+dotenv.config({ path: envPath });
+const secretToken = process.env.MAP_BOX_TOKEN;
 
 const geocode = (adress, callback) => {
   const url = `http://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
