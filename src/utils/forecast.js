@@ -10,7 +10,6 @@ const secretToken = process.env.ACCESS_KEY_WEATHER;
 const forecast = (lat, long, callback) => {
   const url = `http://api.weatherstack.com/current?access_key=${secretToken}&query=${lat},${long}&units=m`;
 
-  console.log(lat, long);
   request({ url, json: true }, (err, { body }) => {
     if (err) callback("Unable to connect to the weather services!", undefined);
 

@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(0.41turn, #19bdff, #00abf0, #73d7ff);
+
+  min-height: 8em;
+  border-bottom: black solid 1px;
+}
+
+.header--title {
+  margin-left: 2em;
+  color: white;
+}
+
+.header--anchors {
+  margin-right: 2em;
+}
+
+.header--anchors > a {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 3px;
+  color: white;
+  transition: 0.5s;
+}
+
+.header--anchors > a:hover {
+  color: black;
+}
