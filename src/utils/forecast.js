@@ -17,7 +17,7 @@ const forecast = (lat, long, callback) => {
 
     callback(
       undefined,
-      `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degrees`
+      `${body.current.weather_descriptions[0]} / ${body.current.temperature}°C`
     );
   });
 };

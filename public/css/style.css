@@ -10,29 +10,64 @@
 .main-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  background-image: url("/img/sky2.webp");
+  background-size: cover;
+  gap: 3em;
 }
 
 .input {
   height: 1.8em;
   border-radius: 5px;
+  width: 40em;
 }
 
 .pannel {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   border: black solid 1px;
   border-radius: 5px;
+  min-width: 10em;
   max-width: fit-content;
   min-height: 10em;
-  background-color: black;
-  opacity: 0.5;
+  background-color: rgba(108, 122, 137, 0.5);
+  gap: 8px;
 }
 
 .pannel > p {
+  color: rgba(red, green, blue, 1);
+}
+
+.city {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.location {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.forecast--img {
   opacity: 1;
-  color: white;
+  height: 2em;
+  width: 2em;
+  margin-right: 0.4em;
+  opacity: 0;
+}
+
+.forecast--img--temp {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.text {
+  position: relative;
+  left: -1em;
 }
