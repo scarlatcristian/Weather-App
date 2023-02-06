@@ -19,9 +19,10 @@
 }
 
 .input {
-  height: 1.8em;
   border-radius: 5px;
   width: 40em;
+  padding: 4px 10px;
+  border: 1px solid #999;
 }
 
 .pannel {

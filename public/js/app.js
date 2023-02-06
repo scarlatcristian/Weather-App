@@ -26,14 +26,14 @@ weatherForm.addEventListener("submit", async function (e) {
     const temperature = data.forecast.split("/");
 
     messageOne.textContent = `${city}`;
-    messageTwo.textContent = country;
+    // messageTwo.textContent = country;
     messageThree.textContent = temperature[1];
     messageFour.textContent = temperature[0];
 
     imgForecast.src = "../img/icons/cloudy.png";
 
     // Change imgForecast
-    const r = temperature[0].split(" ");
+    const r = temperature[0].toLowerCase().split(" ");
     if (r.includes("sunny")) imgForecast.src = "../img/icons/sunny.png";
     if (r.includes("rain")) imgForecast.src = "../img/icons/rain.png";
     if (r.includes("snow")) imgForecast.src = "../img/icons/snow.png";
